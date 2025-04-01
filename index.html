@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yang's Place</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .hero {
+      background: url('your-image.jpg') no-repeat center center/cover;
+      height: 100vh;
+      text-align: center;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .hero img {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+
+    .grid-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 0;
+    }
+
+    .grid-item {
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .order-online { background-color: #e95420; }
+    .menu { background-color: #3a536b; }
+    .about { background-color: #1a2238; }
+    .contact { background-color: #f4f4f4; color: black; flex-direction: column; }
+
+    .contact p {
+      margin: 0.5rem 0;
+    }
+
+    .our-story {
+      background-color: #0e1a2b;
+      color: white;
+      padding: 3rem 2rem;
+    }
+
+    .our-story p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .footer {
+      background: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .subscribe-input {
+      margin-top: 1rem;
+    }
+
+    .subscribe-input input {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
+    .subscribe-input button {
+      padding: 0.5rem 1rem;
+      background: #0e1a2b;
+      color: white;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .grid-item {
+        height: 200px;
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <img src="logo-placeholder.png" alt="Yang's Place Logo">
+    <h1>Yang's Place</h1>
+    <p>楊府私厨</p>
+  </section>
+
+  <section class="grid-section">
+    <div class="grid-item order-online">ORDER ONLINE</div>
+    <div class="grid-item menu">MENU</div>
+    <div class="grid-item" style="background: url('dumplings.jpg') center/cover;">&nbsp;</div>
+    <div class="grid-item" style="background: url('dish.jpg') center/cover;">&nbsp;</div>
+    <div class="grid-item about">ABOUT YANG'S</div>
+    <div class="grid-item" style="background: url('interior.jpg') center/cover;">&nbsp;</div>
+    <div class="grid-item" style="background: url('chef.jpg') center/cover;">&nbsp;</div>
+    <div class="grid-item contact">
+      <p>CONTACT & LOCATION</p>
+      <p>📍</p>
+    </div>
+    <div class="grid-item" style="background: url('table.jpg') center/cover;">&nbsp;</div>
+  </section>
+
+  <section class="our-story">
+    <h2>OUR STORY</h2>
+    <p>
+      We are a family owned and run business with many years of culinary Chinese cuisine experience.
+      Gaining expertise in Five Star Hotels in China and continuing by working with many well known Chinese chefs
+      and restaurants in Melbourne.
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>📞 03 9870 1368</p>
+    <p>📍 32 Railway Ave Ringwood East</p>
+    <div class="subscribe-input">
+      <input type="email" placeholder="Email Address">
+      <button>Subscribe</button>
+    </div>
+    <p style="margin-top: 1rem; font-size: 0.8rem;">yang’s © 2024 brand and website designed by Sons of Smith</p>
+  </footer>
+</body>
+</html>
