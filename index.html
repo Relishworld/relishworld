@@ -4,59 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Relish World</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    html, body {
+      scroll-behavior: smooth;
+    }
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-size: cover;
+      background-position: center;
+    }
+    .order-online {
+      background: #e2e2e2;
+    }
+    .menu {
+      background: #3d6b6d;
+      color: white;
+    }
+    .about {
+      background: #0f1a2c;
+      color: white;
+    }
+    .contact {
+      background: white;
+      color: black;
+    }
+    .story {
+      background: #0f1a2c;
+      color: white;
+      padding: 3rem;
+      text-align: center;
+    }
+    .footer {
+      background: #f8f8f8;
+      color: #333;
+      padding: 2rem;
+      text-align: center;
+    }
+    .footer .subscribe {
+      margin-top: 1rem;
+    }
+    .subscribe input {
+      padding: 0.5rem;
+      width: 250px;
+      margin-right: 0.5rem;
+    }
+    .subscribe button {
+      padding: 0.5rem 1rem;
+      background-color: #ccc;
+      border: none;
+      cursor: pointer;
+    }
+    .button {
+      background-color: #ff5c35;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="header">
-    <h1>Relish World</h1>
-    <p>Fast Food</p>
-  </header>
 
-  <!-- Order Online Section -->
-  <section id="order-online" class="section order-online">
-    <button class="order-button">Order Online</button>
-    <img src="dish-image1.jpg" alt="Dish Image">
+  <section class="order-online">
+    <button class="button">ORDER ONLINE</button>
   </section>
 
-  <!-- Menu Section -->
-  <section id="menu" class="section menu">
+  <section class="menu">
     <h2>Menu</h2>
-    <img src="dish-image2.jpg" alt="Dish Image">
   </section>
 
-  <!-- About Relish World Section -->
-  <section id="about" class="section about">
-    <h2>About Relish World</h2>
-    <img src="restaurant-interior.jpg" alt="Restaurant Interior">
+  <section style="background-image: url('menu-image-1.jpg');"></section>
+  <section style="background-image: url('menu-image-2.jpg');"></section>
+
+  <section class="about">
+    <h2>ABOUT RELISH WORLD</h2>
   </section>
 
-  <!-- Contact & Location Section -->
-  <section id="contact" class="section contact">
-    <h2>Contact & Location</h2>
-    <div class="contact-details">
-      <p>Phone: 9824170707</p>
-      <p>Sanket Towers, B 9/10, near Grid Chowkdi<br>opp. Anand Education College, Vivekanand Wadi<br>Anand, Gujarat</p>
-    </div>
-    <img src="food-and-staff.jpg" alt="Food and Staff">
+  <section style="background-image: url('about-image.jpg');"></section>
+
+  <section class="contact">
+    <h2>CONTACT & LOCATION</h2>
   </section>
 
-  <!-- Our Story Section -->
-  <section id="our-story" class="section our-story">
-    <h2>Our Story</h2>
+  <section style="background-image: url('contact-image.jpg');"></section>
+
+  <section class="story">
+    <h2>OUR STORY</h2>
     <p>Relish World is a proudly family-owned fast food restaurant located in Anand, Gujarat. Since 2003, we’ve been serving the community with a passion for fresh flavors, quick service, and homestyle comfort food. What began as a local favorite has grown into a staple for families, students, and food lovers in the area.</p>
   </section>
 
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="subscribe-section">
-      <label for="subscribe-email">Stay up to date:</label>
-      <input type="email" id="subscribe-email" placeholder="Email Address">
-      <button type="submit">Subscribe</button>
-    </div>
-    <p>Relish World © 2025 brand and website designed by Shiven Patel</p>
-  </footer>
+  <div class="footer">
+    <p><strong>9824170707</strong></p>
+    <p>Sanket Towers, B 9/10, near Grid Chowkdi<br>
+    opp. Anand Education College, Vivekanand Wadi<br>
+    Anand, Gujarat</p>
 
-<script src="scripts.js"></script>
+    <div class="subscribe">
+      <p>Stay up to date</p>
+      <input type="email" placeholder="Email Address">
+      <button>Subscribe</button>
+    </div>
+
+    <p style="margin-top: 2rem; font-size: 0.9rem;">Relish World © 2025 brand and website designed by Shiven Patel</p>
+  </div>
+
 </body>
 </html>
