@@ -11,43 +11,73 @@
       padding: 0;
       font-family: 'Arial', sans-serif;
     }
-    html, body {
+    body {
       scroll-behavior: smooth;
     }
-    section {
-      height: 100vh;
+    .section {
       width: 100%;
+    }
+    .hero {
+      background: url('hero-pattern.jpg') repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero h2 {
+      font-weight: normal;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 33.33vh);
+    }
+    .grid-item {
+      position: relative;
+      overflow: hidden;
+    }
+    .grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
-      background-size: cover;
-      background-position: center;
-    }
-    .order-online {
-      background: #e2e2e2;
-    }
-    .menu {
-      background: #3d6b6d;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.4);
       color: white;
+      font-size: 1.2rem;
     }
-    .about {
-      background: #0f1a2c;
+    .button {
+      background-color: #ff5c35;
       color: white;
-    }
-    .contact {
-      background: white;
-      color: black;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      cursor: pointer;
     }
     .story {
-      background: #0f1a2c;
+      background-color: #0f1a2c;
       color: white;
-      padding: 3rem;
+      padding: 4rem 2rem;
       text-align: center;
     }
     .footer {
       background: #f8f8f8;
-      color: #333;
       padding: 2rem;
       text-align: center;
     }
@@ -65,46 +95,53 @@
       border: none;
       cursor: pointer;
     }
-    .button {
-      background-color: #ff5c35;
-      color: white;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 50px;
-      font-size: 1.2rem;
-      cursor: pointer;
-    }
   </style>
 </head>
 <body>
 
-  <section class="order-online">
-    <button class="button">ORDER ONLINE</button>
-  </section>
+  <div class="section hero">
+    <h1>Relish World</h1>
+    <h2>FAST FOOD</h2>
+  </div>
 
-  <section class="menu">
-    <h2>Menu</h2>
-  </section>
+  <div class="grid">
+    <div class="grid-item" style="background-color: #ccc;">
+      <div class="overlay">
+        <button class="button">ORDER ONLINE</button>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="menu1.jpg" alt="Menu 1">
+    </div>
+    <div class="grid-item">
+      <div class="overlay" style="background-color: #3d6b6d; color: white;">Menu</div>
+    </div>
 
-  <section style="background-image: url('menu-image-1.jpg');"></section>
-  <section style="background-image: url('menu-image-2.jpg');"></section>
+    <div class="grid-item">
+      <img src="menu2.jpg" alt="Menu 2">
+    </div>
+    <div class="grid-item">
+      <div class="overlay" style="background-color: #0f1a2c; color: white;">ABOUT RELISH WORLD</div>
+    </div>
+    <div class="grid-item">
+      <img src="interior.jpg" alt="Interior">
+    </div>
 
-  <section class="about">
-    <h2>ABOUT RELISH WORLD</h2>
-  </section>
+    <div class="grid-item">
+      <img src="location1.jpg" alt="Staff Cooking">
+    </div>
+    <div class="grid-item">
+      <div class="overlay" style="background-color: white; color: black;">CONTACT & LOCATION</div>
+    </div>
+    <div class="grid-item">
+      <img src="location2.jpg" alt="Food Plates">
+    </div>
+  </div>
 
-  <section style="background-image: url('about-image.jpg');"></section>
-
-  <section class="contact">
-    <h2>CONTACT & LOCATION</h2>
-  </section>
-
-  <section style="background-image: url('contact-image.jpg');"></section>
-
-  <section class="story">
+  <div class="section story">
     <h2>OUR STORY</h2>
     <p>Relish World is a proudly family-owned fast food restaurant located in Anand, Gujarat. Since 2003, we’ve been serving the community with a passion for fresh flavors, quick service, and homestyle comfort food. What began as a local favorite has grown into a staple for families, students, and food lovers in the area.</p>
-  </section>
+  </div>
 
   <div class="footer">
     <p><strong>9824170707</strong></p>
