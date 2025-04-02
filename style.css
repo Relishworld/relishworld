@@ -1,0 +1,34 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  background-color: #fff;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.order-online,
+.menu,
+.about,
+.contact,
+.our-story {
+  height: calc(100vh - nav-height); /* Adjust height based on viewport */
+}
+
+.order-button {
+  background-color: orange;
+}
