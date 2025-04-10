@@ -4,16 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Relish World</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
-      font-family: 'Segoe UI', sans-serif;
       background-color: #000;
       color: #fff;
       text-align: center;
+      font-family: 'Montserrat', sans-serif;
     }
 
     body {
@@ -29,14 +33,20 @@
       width: 100%;
     }
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+    .logo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      font-weight: normal;
+      margin-bottom: 0.2rem;
     }
 
-    .tagline {
-      font-size: 1.25rem;
+    .subtitle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 6px;
       margin-bottom: 1.5rem;
+      font-weight: 400;
+      text-transform: uppercase;
     }
 
     a.menu-btn {
@@ -74,12 +84,33 @@
       color: #aaa;
       padding: 20px;
     }
+
+    @media (max-width: 600px) {
+      .logo {
+        font-size: 2.5rem;
+      }
+
+      .subtitle {
+        font-size: 0.9rem;
+        letter-spacing: 4px;
+      }
+
+      section h2 {
+        font-size: 1.5rem;
+      }
+
+      section p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <main>
-    <h1>Relish World</h1>
-    <p class="tagline">Authentic Flavors of India</p>
+    <h1 class="logo">Relish World</h1>
+    <p class="subtitle">FAST FOOD</p>
     <a href="MENU _ 29-9-24 (1) copy.pdf" target="_blank" class="menu-btn">View Menu</a>
 
     <section>
